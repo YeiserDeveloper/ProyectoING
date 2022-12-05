@@ -1,0 +1,18 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro'
+import Info from '../components/Info.astro'
+import Footer from '../components/Footer.astro'
+
+---
+
+<Layout title="Introducción a la ingeniería - Proyecto">
+	<Navbar></Navbar>
+	<Info poster="/Matrix.jpg" title="Estructura de Datos y Algoritmos" subtitle="¿Qué es una estructura de datos?" info="Son un modo de representar información en una computadora, aunque además, cuentan con un comportamiento interno. ¿Qué significa? Que se rige por determinadas reglas/restricciones que han sido dadas por la forma en que está construida internamente."></Info>
+
+	<Info subtitle="¿Para qué sirven las estructuras de datos?" info="En el ámbito de la informática, las estructuras de datos son aquellas que nos permiten, como desarrolladores, organizar la información de manera eficiente, y en definitiva diseñar la solución correcta para un determinado problema." info1="Ya sean las más utilizadas comúnmente —como las variables, arrays, conjuntos o clases— o las diseñadas para un propósito específico —árboles, grafos, tablas, etc.—, una estructura de datos nos permite trabajar en un algo nivel de abstracción almacenando información para luego acceder a ella, modificarla y manipularla."></Info>
+	
+	<Info subtitle="¿Cuáles son los tipos de estructuras de datos?" info="Primero, debemos diferenciar entre estructura de dato estática y estructura de dato dinámica" info1="Las estructuras de datos estáticos son aquellos en las que el tamaño ocupado en memoria se define antes de que el programa se ejecute y no puede modificarse dicho tamaño durante la ejecución del programa, mientras que una estructura de datos dinámica es aquella en la que el tamaño ocupado en memoria puede modificarse durante la ejecución del programa."></Info>
+	<Footer></Footer>
+</Layout>

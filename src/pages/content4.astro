@@ -1,0 +1,20 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro'
+import Info from '../components/Info.astro'
+import Footer from '../components/Footer.astro'
+
+---
+
+<Layout title="Introducción a la ingeniería - Proyecto">
+	<Navbar></Navbar>
+	<Info poster="/code.jpg" media="/assembly_language.png" medio="img" title="Lenguaje máquina o lenguaje emsablador" info="El lenguaje ensamblador constituye el primer intento de sustitución del lenguaje por uno más cercano al utilizado por los humanos. No obstante, el lenguaje ensamblador presenta la mayoría de los inconvenientes que tiene el lenguaje máquina: un repertorio muy reducido de instrucciones, el rígido formato de las instrucciones, la baja portabilidad y la fuerte dependencia del hardware. Este tipo de lenguajes hacen corresponder a cada instrucción en ensamblador una instrucción en código máquina. Esta traducción la lleva a cabo un programa traductor denominado ensamblador. Dado que el lenguaje ensamblador está fuertemente condicionado por la arquitectura del ordenador que soporta, los programadores no suelen escribir programas de tamaño considerable en ensamblador, sino que emplean este lenguaje para afinar partes importantes de programas escritos en lenguajes de más alto nivel." info1="El lenguaje ensamblador sigue siendo importante, ya que ofrece al programador el control total de la máquina y como resultado genera un código compacto, rápido y eficiente."></Info>
+
+	<Info info="Su estructura está completamente adaptada a los circuitos de la máquina y muy alejada de la forma de expresión y análisis de los problemas propios de los humanos. La programación en este lenguaje es complicada, de manera que se requiere un profundo conocimiento de la arquitectura física del ordenador. "></Info>
+
+	<Info info="Contenido complementario Sin embargo, el código máquina hace posible que el programador utilice la totalidad de los recursos que ofrece el ordenador, con lo que se obtienen programas muy eficientes en tiempo de ejecución y en ocupación de memoria, dado que aprovechan al máximo los recursos existentes."></Info>
+
+	<Info info="El lenguaje ensamblador y casi todos los lenguajes simbólicos de alto nivel resuelven estas limitaciones."></Info>
+	<Footer></Footer>
+</Layout>

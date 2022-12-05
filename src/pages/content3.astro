@@ -1,0 +1,20 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro'
+import Info from '../components/Info.astro'
+import Footer from '../components/Footer.astro'
+
+---
+
+<Layout title="Introducción a la ingeniería - Proyecto">
+	<Navbar></Navbar>
+	<Info poster="/diagrama.jpg" media="/Computer.jpg" medio="img" title="Diseño lógico" info="El diseño logico del sistema consiste en desarrollar modelos logicos que describan la esencia del sistema, lo que tiene que hacer independientemente del modo en que se implante fisicamente. Al suprimir en el diseño logico la tecnologia, el analista de sistemas tiene mayor libertad de movimiento a la hora de diseñar un modelo que cumpla con todos los requerimientos del nuevo sistema." info1="El modelo lógico es la representación de la estructura y las relaciones de los datos esenciales del negocio, eso es para el modelo de datos. El diseño lógico traduce los escenarios de uso creados en el diseño conceptual en un conjunto de objetos de negocio y sus servicios. El diseño lógico se convierte en partes en la especificación funcional que se usa en el diseño físico."></Info>
+
+	<Info medio="img" media="/Diagrama_de_clases.png" subtitle="Diagramas de clase" info="Los diagramas de clase son un superconjunto de los diagramas E-R (Entidad— Relación), comúnmente las herramientas de modelado para el diseño lógico	de la base de datos. Donde clásicamente los diagramas E-R se contraen en los datos, los diagramas de clase van más allá por permitir el modelado del comportamiento también. En la base de datos física, estas operaciones lógicas son generalmente asignadas los procedimientos almacenados."></Info>
+
+	<Info medio="img" media="/Diagrama_de_caso_de_uso.jpeg" subtitle="Diagrama de caso de uso" info="Una relación de este diagrama puede describir las acciones de un sistema desde el punto de vista del usuario."></Info>
+
+	<Info medio="img" media="/activity-diagram.png" subtitle="Diagrama de actividades" info="Los diagramas de flujo de actividad son utilizados para analizar y presentar flujos de actividad compleja en los procesos de negocio y en las secuencias de transacciones (secuencia, iteraciones, y decisiones)."></Info>
+	<Footer></Footer>
+</Layout>

@@ -1,0 +1,31 @@
+---
+const { title, subtitle, info1, info, media, medio, poster } = Astro.props
+---
+
+<section>
+    <div class="max-h-36 overflow-hidden">
+        <img src={poster} class="min-w-full object-fill">
+    </div>
+
+    <div class="article md:mx-16 lg:mx-44">
+        <div>
+            <h1 class="sm:text-5xl md:text-5xl lg:text-5xl mt-4 font-bold">{title}</h1>
+        </div>
+        <div class="flex justify-center">
+            {
+                medio === 'video' ? <embed type="text/html"  src={media} class="min-w-full max-w-[560px]  max-h-[315px] md:h-[315px] lg:h-[315px] rounded-box mt-5"> : ''
+            }
+
+            {
+                medio === "img"  ? <img src={media} class="sm:max-w-sm md:max-w-md lg:max-w-lg mt-5 rounded-box"/> : ''
+            }
+        </div>
+        <div>
+            <h2 class="mt-4 text-2xl font-bold">{subtitle}</h2>
+            <p class="mt-4 text-justify">{info}</p>
+            <p class="mt-4 text-justify">{info1}</p>
+        </div>
+    </div>
+</section>
+
+<style></style>

@@ -1,0 +1,17 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro'
+import Info from '../components/Info.astro'
+import Footer from '../components/Footer.astro'
+---
+
+<Layout title="Introducción a la ingeniería - Proyecto">
+	<Navbar></Navbar>
+	<Info poster="/internet.jpg" medio="img" media="/Internet.jpg" title="Fundamentos del internet" subtitle="¿Qué es el Internet?" info="Internet es una red de computadoras interconectadas a nivel mundial en forma de tela de araña. Consiste de servidores o nodos que proveen información a aproximadamente 100 millones de personas que están conectadas entre ellas a través de las redes de telefonía y cable." info1="Se trata de un sistema de redes interconectadas mediante distintos protocolos que ofrece una gran diversidad de servicios y recursos, como, por ejemplo, el acceso a archivos de hipertexto a través de la web.	Internet es un anglicismo que se forma por la abreviación del término International Network of Computers, que en español se podría traducir como ‘Red Internacional de Computadoras’, o también como ‘Red de redes’."></Info>
+
+	<Info medio="img" media="/historia_internet.jpg" subtitle="¿Cuál es su Importancia?" info="Internet aporta una serie de posibilidades para el desarrollo personal y para la realización de muchas de nuestras actividades diarias (ocio, trabajo, gestiones administrativas, etc.). Estas ventajas se resumen en que la red facilita el acceso a la información, la comunicación y el entretenimiento."></Info>
+	
+	<Info medio="video" media="https://www.youtube.com/embed/i4RE6dBAjH4" subtitle="Historia del internet" info="Internet se inició en torno al año 1969, cuando el Departamento de Defensa de los EE. UU desarrolló ARPANET, una red de ordenadores creada durante la Guerra Fría cuyo objetivo era eliminar la dependencia de un Ordenador Central, y así hacer mucho menos vulnerables las comunicaciones militares norteamericanas."></Info>
+	<Footer></Footer>
+</Layout>

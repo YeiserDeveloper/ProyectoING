@@ -1,0 +1,18 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro'
+import Info from '../components/Info.astro'
+import Footer from '../components/Footer.astro'
+
+---
+
+<Layout title="Introducción a la ingeniería - Proyecto">
+	<Navbar></Navbar>
+	<Info poster="/Software_engineer.jpg" medio="video" media="https://www.youtube.com/embed/gEnAeuOFolI" title="Fundamentos de computación" subtitle="¿Qué es el computador?" info="Computación es sinónimo de informática. Como tal, se refiere a la tecnología desarrollada para el tratamiento automático de la información mediante el uso, computadoras u ordenadores." info1="En este sentido, la computación es también un área de conocimiento constituida por disciplinas relativas a las ciencias y la tecnología, para el estudio, desde el punto de vista teórico y práctico, de los fundamentos del procesamiento automático de datos, y su desarrollo, implementación y aplicación en sistemas informáticos."></Info>
+
+	<Info subtitle="¿Qué es el software?" info="Es un conjunto de programas, instrucciones y reglas informáticas que permiten ejecutar distintas tareas en una computadora." info1="Se considera que el software es el equipamiento lógico e intangible de un ordenador. En otras palabras, el concepto de software abarca a todas las aplicaciones informáticas, como los procesadores de textos, las planillas de cálculo, los editores de imágenes, los reproductores de audio y los videojuegos, entre otras muchas."></Info>
+
+	<Info subtitle="¿Qué es el hardware?" info="Es la parte física de un ordenador o sistema informático. Está formado por los componentes eléctricos, electrónicos, electromecánicos y mecánicos, tales como circuitos de cables y luz, placas, memorias, discos duros, dispositivos periféricos y cualquier otro material en estado físico que sea necesario para hacer que el equipo funcione."></Info>
+	<Footer></Footer>
+</Layout>
